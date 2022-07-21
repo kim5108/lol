@@ -1,0 +1,28 @@
+.gnb{
+    position:absolute; 
+    top: 50%;
+    transform: translateY(-50%);
+    left: 50px;
+}
+.gnb a{
+    display: block;
+    font-size: 40px;
+    margin: 20px 0;
+    color: white;
+    transition: 0.6s;
+}
+.gnb:hover a{
+    opacity: 0.3;
+}
+.gnb a:hover{
+    opacity: 1;
+}
+.gnb a:before{
+    content: '\f105';
+    font-family: fontawesome;
+    margin-right: 10px;
+    opacity: 0;
+}
+.gnb a:hover:before{
+    opacity: 1;
+}

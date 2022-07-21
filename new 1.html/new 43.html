@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>hover를 활용한 기본형 드롭다운 네비게이션</title>
+        <link rel="stylesheet" href="style30.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css?family=Raleway&display=wasp');
+
+            @import url('https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css');
+
+            body{
+                font-family: 'Raleway', sans-serif;
+                line-height: 1.5em;
+                margin: 0;
+                background-color: #fff;
+               
+            }
+            a{
+                text-decoration: none;
+            }
+
+            .container{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+            .card{
+                margin: 10px;
+                position: relative;
+                width: 300;
+                height: 400;
+                overflow: hidden;
+                transition: 0.5s;
+            }
+            .content{
+                position: absolute;
+                height: inherit;
+                width: inherit;
+                top: 100%;
+                left: 0;
+                padding: 20px;
+                box-sizing: border-box;
+                background: linear-gradient(to top, crimson, transparent);
+                color: #fff;
+                text-align: center;
+                padding-top: 150px;
+                box-sizing: border-box;
+                transition: 0.5s;
+            }
+            .content h2{
+                font-size: 30px;
+            }
+            .content h2 span{
+                display: block;
+                font-size: 14px;
+                color: gold;
+                margin-top: 10px;
+            }
+            .sns a{
+                color: #fff;
+            }
+            .card img {
+                width: 300px;
+                height: 400px;
+            }
+            .card:hover .content{
+                top: 0;
+            }
+            .card:hover{
+                transform: translateY(-20px);
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.21);
+            }
+        </style>
+    </head>
+    <body>
+    <div class="container">
+        <div class="card">
+            <img src="/img/tree.jpg" >
+            <div class=" content">
+                <h2>THE TREE <span>plant</span></h2>
+                <p>
+                    나무는 보통 개체를 지탱하는 하나의 줄기를 
+                    들을 지탱하는 목질의 식물이다. 일부 학자들은 
+                     6미터 정도가 되고 줄기의 반지름이 10cm, 둘레가 3
+                     ] 이러한 정의를 만족하지 못하는 줄기가 여러 
+                </p>
+                <div class="sns">
+                    <a href="#none"><i class="fa fa-facebook"></i></a>
+                </div>
+            </div>
+     
+    <!-- <script src="script/jquery-1.12.4.js"></script>
+        <script src="script/custom26.js"></script>-->
+    </body>

@@ -1,0 +1,40 @@
+body{
+    color: #222;
+    line-height: 1.5em;
+}
+a{
+    color: #222;
+    text-decoration: none;
+}
+.dropdown{
+    border: 1px solid #222;
+    width: 200px;
+}
+.dropdown-btn{
+    width: 200px;
+    padding: 10px;
+    font-size: 18px;
+    background-color: yellowgreen;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.dropdown-submnu{
+    display: none;
+    width: 200px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.17);
+}
+.dropdown-submnu a{
+    display: block;
+    padding: 7px;
+    text-align: center;
+    border: 1px solid rgb(220, 215, 215);
+}
+.dropdown-submnu a:hover{
+    background-color: rgb(23, 6, 6);
+}
+
+.dropdown:hover .dropdown-submnu{
+    display: block;
+}

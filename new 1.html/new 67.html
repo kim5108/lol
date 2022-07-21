@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>rotate 활용한 것</title>
+        <link rel="stylesheet" href="style30.css">
+        <style>
+            body{
+                line-height: 1.5em;
+                margin: 0;
+                font-weight: 300;
+                background-color: #34465d;
+                color: azure;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+            a{
+                text-decoration: none;
+                color: rgb(216, 20, 20);
+               
+            }
+
+            .gnb a{
+                text-decoration: uppercase;
+                position: relative;
+               transition: 0.3s;
+                width: 450px;
+                display: block;
+                text-align: center;
+                padding: 15px;
+                box-sizing: border-box;
+            }
+            .gnb a:before,  .gnb a:after {
+                content: '';
+                position: absolute;
+                width: 100%;
+                background-color: rgba(255, 255, 255, 0.171);
+                height: 100%;
+                top: 0;
+                left: 0;
+                border: 1px solid #842d2d63;
+                transition: 0.3s;
+            }
+            .gnb a:hover{
+                letter-spacing: 6px;
+            }
+            .gnb a:hover:before{
+                transform: rotate(45deg);
+            }
+            .gnb a:hover:after{
+                transform: rotate(-45deg);
+            }
+       
+        </style>
+    </head>
+    <body>
+        <div class="gnb">
+            <a href="#none">codingworks online class</a>
+        </div>
+    <!-- <script src="script/jquery-1.12.4.js"></script>
+        <script src="script/custom26.js"></script>-->
+    </body>

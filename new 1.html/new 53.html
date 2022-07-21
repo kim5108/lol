@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>hover를 활용한 기본형 드롭다운 네비게이션</title>
+        <!--jquety CDN-->
+          <script type="text/javascript" src="js/jquery-1.12.4.js"></script>
+          <script type="text/javascript" src="js/custom53.js"></script>
+        
+        <link rel="stylesheet" href="style54.css">
+        <script type="text/javascript">
+            $('#btn li').click(function(){
+    $(this).addClass('active')
+});
+        </script>
+        <style>
+         
+       
+        </style>
+  
+    </head>
+    <body>
+        <section>
+            <ul class="btn">
+                <li data-alt="tab1" class="">HTML5</li>
+                <li data-alt="tab2">CSS</li>
+                <li data-alt="tab3">JQUERY</li>
+                <li data-alt="tab4">JAVASCRIPT</li>
+                <li data-alt="tab5">CSS FRAMEWORKS</li>
+            </ul>
+            <div class="tabs">
+                <div id="tab1" class="">tab1</div>
+                <div id="tab2">tab1</div>
+                <div id="tab3">tab1</div>
+                <div id="tab4">tab1</div>
+                <div id="tab5">tab1</div>
+            </div>
+        </section>
+       
+
+    </body>
+</html>

@@ -1,0 +1,11 @@
+
+h1{
+    display: inline-block;
+font-size: 5000;
+color: #ff0000f7;
+width: 5000;
+border: 1px dashed red;
+}
+body{
+    background-color: black;
+}

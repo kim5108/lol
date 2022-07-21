@@ -1,0 +1,24 @@
+div{
+    background-color: aquamarine;
+    width: 250px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 5px;
+    float: left;
+}
+.box1{
+    box-shadow: 5px 5px 20px red;
+}
+.box2{
+    box-shadow: 0 0 20px darkblue;
+}
+.box3{
+    box-shadow: 10px 10px 0 black;
+}
+.box4{
+    box-shadow: inset 0 0 20px rgba(red, green, blue, alpha);
+}
+.box5{
+    box-shadow: inset 0 0 20px rgba(rgb(238, 0, 255), rgb(128, 0, 90), rgb(255, 221, 0), alpha);
+}
+/*box-shadow:x축 이동거리 y축 이동거리 퍼짐정도 색상*/

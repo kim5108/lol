@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>커스텀 체크박스 스타일ring</title>
+        <link rel="stylesheet" href="style30.css">
+        <style>
+            body{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                font-weight: 300; 
+            }
+            a{
+                text-decoration: none;
+            }
+            .custom input[tyle=checkbox]{
+                display: none;
+            }
+            .custom label em {
+                
+                width: 20px;
+                height: 20px;
+                display: inline-block;
+                vertical-align: middle;
+                margin-right: 5px;
+                background:url(/img/1000_F_199522246_N0hLlmnfe8Gn6TlMhSlNSt4wjxStr6o4.jpg) no-repeat ;
+                background-position: left center;
+            }
+            .custom input[type=checkbox]:checked+label em{
+                background-position: right center;
+            }
+       
+        </style>
+    </head>
+    <body>
+        <div class=" custom">
+            <label>
+           <input type="checkbox"> 약관을 완전히 이해하였으며 모든 설명란에 동의 합니다. 
+        </lable>
+        </div>
+
+
+       
+    <!-- <script src="script/jquery-1.12.4.js"></script>
+        <script src="script/custom26.js"></script>-->
+    </body>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>hover를 활용한 기본형 드롭다운 네비게이션</title>
+        <link rel="stylesheet" href="style51.css">
+        <script src="script/jquery-1.12.4.js"></script>
+        <script src="custom51.js"></script>
+        <style>
+         
+       
+        </style>
+    </head>
+    <body>
+        <div class="star-rating">
+            <div class="stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+            <div class="print">
+                평가 해주실거죠?
+            </div>
+        </div>
+           <script>
+                $('.stars, .fa').click(function(){
+                    $(this).addClass('active')
+                    $(this).prevAll().addClass('active')
+                    4(this).nextAll().removeClass('active')
+
+                    var num= $(this).index()
+                    var starRate = num + 1
+                  //  $('.print').text(num)
+
+                  if(starRate == 1){
+                      $('.print').text('별로에요')
+                  }
+                  else if(starRate == 2){
+                      $('.print').text('보통')
+                  }
+                  else if(starRate==3){
+                      $('.print').text('그냥 그래요')
+                  }
+                  else if(starRate==4){
+                      $('.print').text('맘에 들어요')
+                  }
+                  else {
+                      $('.print').text('맘에 들어요')
+                  }
+                })
+            </script> 
+    </body>

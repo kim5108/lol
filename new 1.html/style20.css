@@ -1,0 +1,27 @@
+.box{
+    border: 5px solid #000;
+    text-align: center;
+}
+.box div{
+    border: 5px solid #000;
+    margin: 10px;
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+
+}
+
+.box div:nth-child(1){
+    background-color: dodgerblue;
+    border-radius: 15px;
+   
+}
+.box div:nth-child(2){
+    background-color:aqua;
+}
+.box div:nth-child(3){
+    background-color:blueviolet;
+}
+.box div:nth-child(4){
+    background-color:black;
+}

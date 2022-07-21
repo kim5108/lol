@@ -1,0 +1,72 @@
+.items{
+    
+    text-align: center;
+}
+.item{
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    border: 1px solid;
+    position: relative;
+    margin: 10px;
+    
+}
+.item img{
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+}
+.caption{
+    width: 300px;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.648);
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    padding-top: 40px;
+    opacity: 0;
+    transition: 0.7s;
+}
+.caption a{
+    color: #fff;
+    background-color: aquamarine;
+    padding: 7px;
+    border-radius: 3px;
+}
+.caption a:hover{
+    background-color: #fff;
+    color: #000;
+}
+.item:hover .caption{
+    opacity: 1;
+}
+/*인라인 블럭 속성 정리,  차이점
+.과 #의 차이 relative , absolute
+
+{ display: block; }
+
+반면 block은 무조건 한줄을 점유하고, 다음 태그는 다음 줄로 가버림
+.
+
+{ display: inline; }
+
+대표적으로 <span>이라는 태그의 성질로 content/text 크기만큼만 점유하고
+동일 라인에 붙는 성질임니다.
+'이 글씨는 두꺼운 효과를 주었다.'와 같이 text 내에 특정 부분에만 스타일을 간단히 줄때 많이 사용됨
+
+{ display: inline-block; }
+
+2개의 짬뽕입니다. 제일 중요한 성질 자체는 inline과 비슷합니다.
+동일 라인에 여러 태그를 붙일 때 쓸 수 있습니다.
+다만 위 inline의 단점들을 커버하는 것이 inline-block입니다.
+- width/height 적용 가능
+- margin/padding-top/bottom 적용 가능
+- line-height 적용 가능
+
+
+디테일한 보정이 필요하고 예민하신 부분은 inline-block 쓰는게 낫고,
+text 내의 특정 부분 스타일 등 간단한 것들은 그냥 inline 쓰면 됨.
+*/

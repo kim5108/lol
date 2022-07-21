@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>어코디언 콘텐트 슬라이드 와이어 프레임 설계</title>
+        <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script src=""></script>
+        <link rel="stylesheet" href="style57.css">
+       
+        <style>
+         
+       
+        </style>
+    </head>
+    <body>
+        <section>
+            <article>
+                <div class="heading">
+                    <span>하드코딩(Hard Coding) 실력이 진짜 퍼블리싱 실력입니다</span>
+                    <h1> <em>카톡</em> 간편 회원가입, <b>코딩웍스</b>의 진짜 퍼블리싱 강의를 만나세요.</h1>
+                </div>
+                <div class="content">
+                    <div class="accordion">
+                        <div class="title active" data-image="img/app-capture-01.png">하드코딩(Hard Coding) 실력이 진짜 퍼블리싱 실력</div>
+                        <div class="desc active">
+                            제이쿼리 플러그인 사용해서 역동적이고 화려하게 꾸미는 퍼블리싱은 진짜 퍼블리싱이 아닙니다.
+                            <br><br>
+                            진짜 퍼블리싱 실력은 HTML로 레이아웃 설계를 꼼꼼히 잘하고, CSS로 배치와 상세 디자인하고, 직접 작성한 제이쿼리(JQUERY)로 상호작용까지 만들 수 있는 것이 진짜 퍼블리싱 실력입니다.</div>
+                            
+                            <div class="title" data-image="img/app-capture-01.png">당장의 화려함 보다 탄탄한 이론이 필수</div>
+                            <div class="desc">
+                                당장의 화려함에 제이쿼리 플러그인 사용에 의존하고 기본기 학습을 충실히 하지 않으면 웹 퍼블리셔로 취업하기 쉽지 않습니다. 설령 취업해서 실무에서 일하게 되더라도 퍼블리셔로서 어려운 하루 하루가 될 가능성이 높습니다.
+
+                                코드 한줄 한줄 직접 코딩하는 곧, 하드 코딩할 수 있는게 진짜 실력이고 진짜 퍼블리싱 실력입니다.
+                                .</div>
+
+                                <div class="title" data-image="img/app-capture-01.png">하드코딩(Hard Coding) 실력이 진짜 퍼블리싱 실력</div>
+                                <div class="desc">
+                                    제이쿼리 플러그인 사용해서 역동적이고 화려하게 꾸미는 퍼블리싱은 진짜 퍼블리싱이 아닙니다.
+                                    <br><br>
+                                    진짜 퍼블리싱 실력은 HTML로 레이아웃 설계를 꼼꼼히 잘하고, CSS로 배치와 상세 디자인하고, 직접 작성한 제이쿼리(JQUERY)로 상호작용까지 만들 수 있는 것이 진짜 퍼블리싱 실력입니다.</div>
+
+                                    <div class="title" data-image="img/app-capture-01.png">하드코딩(Hard Coding) 실력이 진짜 퍼블리싱 실력</div>
+                                    <div class="desc">
+                                        제이쿼리 플러그인 사용해서 역동적이고 화려하게 꾸미는 퍼블리싱은 진짜 퍼블리싱이 아닙니다.
+                                        <br><br>
+                                        진짜 퍼블리싱 실력은 HTML로 레이아웃 설계를 꼼꼼히 잘하고, CSS로 배치와 상세 디자인하고, 직접 작성한 제이쿼리(JQUERY)로 상호작용까지 만들 수 있는 것이 진짜 퍼블리싱 실력입니다.</div>
+
+                                        <div class="title" data-image="img/app-capture-01.png">하드코딩(Hard Coding) 실력이 진짜 퍼블리싱 실력</div>
+                                        <div class="desc">
+                                            제이쿼리 플러그인 사용해서 역동적이고 화려하게 꾸미는 퍼블리싱은 진짜 퍼블리싱이 아닙니다.
+                                            <br><br>
+                                            진짜 퍼블리싱 실력은 HTML로 레이아웃 설계를 꼼꼼히 잘하고, CSS로 배치와 상세 디자인하고, 직접 작성한 제이쿼리(JQUERY)로 상호작용까지 만들 수 있는 것이 진짜 퍼블리싱 실력입니다.</div>
+                        </div>
+                    <div class="image">
+                        <img src="img/app-capture-01.png">
+                    </div>
+                </div>
+            </article>
+        </section>
+        <script>
+            $('.title').click(function(){
+              $(this).addClass('active')
+              $(this).siblings('.title').removeClass('active')
+              $(this).siblings('.desc').stop().slideUp()
+              $(this).next().stop().slideDown()
+        
+              var dataImage = $(this).attr('data-image')
+              $('.image img').attr('src', dataImage)
+            })
+          </script>
+    </body>
+</html>

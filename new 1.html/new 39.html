@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>입력 필드 디자인을 바꾸는 것</title>
+        <link rel="stylesheet" href="style30.css">
+        <style>
+            body{
+                line-height: 1.5em;
+                margin: 0;
+                font-weight: 300;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+            a{
+                text-decoration: none;
+            }
+            .item{
+                border: 1px solid red; 
+                width: 300px;
+                margin-bottom: 10px;
+                position: relative;
+            }
+            .item input[type=text],
+            .item input[tyle=email],
+            .item input input[tyle=tel]{
+                border: 1px solid lightgrey;
+                height: 40px;
+                width: inherit;
+                border-radius: 5px;
+                padding: 10px;
+                box-sizing: border-box;
+            }
+            .item .fa{
+                position: absolute;
+                top: 0;
+                left: 0;
+                color: gray;
+                font-size: 24px;
+                height: 40px;
+                border: 1px solid blue;
+                text-align: center;
+                line-height: 40px;
+            }
+       
+        </style>
+    </head>
+    <body>
+        <form class="info">
+            <div class="item">
+                <input type="text" placeholder="니이름">
+                <i class="fa-user"></i>
+            </div>
+            <div class="item">
+                <input type="email" placeholder="이메일">
+                <i class="fa-envelope"></i>
+            </div>
+            <div class="item">
+                <input type="tel" placeholder="전화번호">
+                <i class="fa-phone"></i>
+            </div>
+        </form>
+    <!-- <script src="script/jquery-1.12.4.js"></script>
+        <script src="script/custom26.js"></script>-->
+    </body>

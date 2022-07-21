@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>border 애니매이션 네비게이션 호버 이팩트</title>
+        <link rel="stylesheet" href="style30.css">
+        <style>
+            body{
+                line-height: 1.5em;
+                margin: 0;
+                font-weight: 300;
+                color: #222;
+                background-color: #f4f4f4;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+            .gnb{
+                list-style: none;
+                padding: 0;
+                width: 600px;
+                background-color: #fff;
+                border-radius: 10px;
+                box-shadow: 0 0 20px rgba(0, 0, 0, 0, 0.1);
+                padding: 50px 30px;
+            }
+         .gnb li{
+            float: left;
+            width: 120px;
+            box-sizing: border-box;
+            text-align: center;
+         }
+         .gnb li a{
+             font-size: 14px;
+             position: relative;
+         }
+         .gnb li a:before{
+             content: '';
+             position: absolute;
+             background-color: dodgerblue;
+             height: 2px;
+             width: 0;
+             bottom: -10px;
+             transition: 0.5s;
+             left: 50%;
+             transform: translateX(-50%);
+         }
+         .gnb li a:hover:before{
+             width: 100%;
+         }
+        
+       
+        </style>
+    </head>
+    <body>
+        <ul class="gnb">
+            <li><a href="#none">𝙻𝚘𝚋𝚋𝚢</a></li>
+            <li><a href="#none">𝚊𝚋𝚘𝚞𝚝</a></li>
+            <li><a href="#none">𝘴𝘦𝘳𝘷𝘦𝘳</a></li>
+            <li><a href="#none">𝘱𝘪𝘯𝘨</a></li>
+            <li><a href="#none">𝚒𝚗𝚏𝚘</a></li>
+        </ul>
+    <!-- <script src="script/jquery-1.12.4.js"></script>
+        <script src="script/custom26.js"></script>-->
+    </body>

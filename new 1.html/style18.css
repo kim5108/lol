@@ -1,0 +1,12 @@
+body{
+    background-color: #fff;
+    color: red;
+}
+a{
+    color: blueviolet;
+    text-decoration: none;
+}
+a:hover{
+    color: coral;
+    text-decoration: underline;
+}

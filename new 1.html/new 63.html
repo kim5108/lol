@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>모달 만들기</title>
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="custom62.js"></script>
+  <link rel="stylesheet" href="style63.css">
+</head>
+<body>
+    <a href="#none" onclick="openModal()">open fade-in modal with jquery</a>
+
+    <div class="modal">
+        <div class="modal-content">
+            <a class="btn-close" href="#none" onclick="closemModal()">X</a>
+            <div class="modal-body">
+            <h2>wlecom to teams!</h2>
+            <img src="img/group.png">
+            <p>
+                microsoft tam is microsoft tam ismicrosoft tam ismicrosoft tam is
+                microsoft tam ismicrosoft tam isv
+                microsoft tam ismicrosoft tam is
+                microsoft tam ismicrosoft tam
+                 ismicrosoft tam ismicrosoft tam is
+            </p>
+            <a class="btn-guide" href="#none"></a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+      var modal = document.getElementById('modal-notice');
+
+      function openModal() {
+        modal.classList.add('active')
+      }
+      function closmModal() {
+        modal.classList.remove('active')
+
+      }
+    </script>
+</body>
+</html>
